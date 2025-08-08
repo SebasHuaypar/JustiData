@@ -10,7 +10,7 @@ st.set_page_config(page_title="Predicción de Delitos", layout="centered")
 st.markdown("""
     <style>
     html, body, .main {
-        background-color: #fff6e5;
+        background-color: #213165;
         font-family: 'Segoe UI', sans-serif;
     }
     header, footer {visibility: hidden;}
@@ -77,4 +77,5 @@ if not df_hist_dpto.empty and not df_pred_dpto.empty:
     ax.grid(True)
     st.pyplot(fig)
 else:
+
     st.info("No hay datos históricos suficientes para mostrar el gráfico.")
